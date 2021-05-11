@@ -29,10 +29,20 @@ li {
  grid-template-areas: 
  "header header"
  "nav nav"
+ "main figure"
+ "footer footer";
+}
+.wrapper1{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows:125px 65px 355px 355px 100px;
+ grid-template-areas: 
+ "header header"
+ "nav nav"
+ "main main"
  "main main"
  "footer footer";
 }
-
 header{
 	display:grid;
 	grid-area:header;
@@ -49,7 +59,7 @@ nav{
     border-bottom: 3px solid black;
 }
 main{
-	grid-area:main main;
+	grid-area:;
 }
 footer{
 	grid-area:footer;
@@ -74,7 +84,27 @@ p{
 	grid-area:main;
 }
 .img-kader{
-	grid-area:main;
-	width:300px;
+	grid-area:figure;
+	width:450px;
+	
   
+}
+.tävlingar{
+	background-color: #c4bed1;
+	padding:0;
+	margin:0;
+}
+.img-SLS{
+	width:500px;
+	grid-area:main;
+	padding: 75px;
+	
+}
+
+
+.tt{
+	grid-area:main;
+}
+.ultävling{
+	grid-area:main;
 }
