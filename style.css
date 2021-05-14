@@ -122,12 +122,35 @@ font-size:22px
 }
 .ultävling{
 	font-size:30px;
+	padding:30px;
+	border:1px solid black;
 }
 table, th, td{
 	border:1px solid black;
-	font-size:30px;
+	font-size:15px;
+	
+	
 }
+
 .local{
 	text-align:center;
 	grid-area:nav1;
+}
+
+.formulär{
+	float:right;
+	font-size:12px;	
+}
+.bild{
+	width:500px;
+	padding-left:170px;
+}
+audio{
+	padding:10px;
+}
+.id{
+	font-size:22px;
+}
+.tävlingtabell{
+	font-size:30px;
 }
