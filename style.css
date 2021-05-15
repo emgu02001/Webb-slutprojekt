@@ -1,3 +1,4 @@
+/*dekoration för placering och layout av titeln som är samma på alla sidorna*/
 h1{
 padding-top: 40px;
 text-align: left;
@@ -11,17 +12,19 @@ nav ul{
   text-align: center;
   
 }
+/*dekoration för listan i menyerna*/
 nav li {
 	float: center;
    display: inline;
  
 }
+/*gäller bara id till index*/
 #index{
 	background-color: #c4bed1;
 	margin: 0;
     padding: 0;
 }
-
+/*Skapar ett grid och namnger de olika rutorna som skapas*/
 .wrapper{
  display: grid;
  grid-template-columns: 1fr 1fr;
@@ -32,6 +35,7 @@ nav li {
  "main figure"
  "footer footer";
 }
+/*Skapar en annan grid fast med annan layout*/
 .wrapper1{
  display: grid;
  grid-template-columns: 1fr;
@@ -42,6 +46,7 @@ nav li {
  "main"
  "footer"
 }
+/*Skapar en annan grid fast med annan layout*/
  .wrapper2{
  display: grid;
  grid-template-columns: 1fr;
@@ -68,6 +73,7 @@ nav{
 	background-color:#8d84a1;
     border-bottom: 3px solid black;
 }
+/*griddar för mainen*/
 main{
 	display:grid;
 	grid-template-columns:1fr 1fr;
@@ -78,6 +84,7 @@ footer{
 	grid-area:footer;
 	background-color: #878db0;
 }
+/*dekorering på texten i menyn*/
 nav a{
 	text-decoration:none;
 	font-size:30px;
@@ -86,6 +93,7 @@ nav a{
 	
 	
 }
+/*texten ändrar färg när man håller musen över på menyerna*/
 a:hover {
 color:#b286f0;
 }
@@ -96,6 +104,7 @@ p{
 	padding-top: 50px;
 	grid-area:;
 }
+/*olika klasser för olika tabeller och bilder eftersom vissa saker inte ska påverka allting*/
 .img-kader{
 	grid-area:main;
 	width:450px;
@@ -131,12 +140,13 @@ table, th, td{
 	
 	
 }
-
+/*lokal meny
+använder en ny grid på de 4 sidor som har lokal meny med nav1 som ett extra grid område*/
 .local{
 	text-align:center;
 	grid-area:nav1;
 }
-
+/*ändrar position och storlek på formulär för att det ska passa*/
 .formulär{
 	float:right;
 	font-size:12px;	
@@ -145,6 +155,7 @@ table, th, td{
 	width:500px;
 	padding-left:170px;
 }
+/*enkel css för att justera pixlarna på rutan med ljud*/
 audio{
 	padding:10px;
 }
